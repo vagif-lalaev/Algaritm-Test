@@ -10,7 +10,7 @@ public class TestBackpackBest {
         final int W = 7;
         final Item[] arrItem = {item1, item2, item3};
 
-        //сортируем в обратном порядке изходя из ценности на еденизу кг.
+        //сортировка в обратном порядке исходя из ценности на единицу кг.
         Arrays.sort(arrItem, Comparator.comparingDouble(Item::valueOfWeight).reversed());
         System.out.println(Arrays.toString(arrItem));
 
